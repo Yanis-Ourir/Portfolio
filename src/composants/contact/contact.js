@@ -4,6 +4,10 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 import Map from '../google-map/map';
 
 function contact() {
+    function sendMail() {
+        alert("Votre mail a bien été envoyé !");
+    }
+
     return (
         <div className="contact-all">
             <div className="contact">
@@ -31,7 +35,7 @@ function contact() {
                             <input type="text" name="message" placeholder="Votre message" />
                         </div>
 
-                        <button className="btnContact" type="submit">Envoyer<AiOutlineArrowRight className="arrow" /></button>
+                        <button className="btnContact" type="submit" onClick={() => sendMail()}>Envoyer<AiOutlineArrowRight className="arrow" /></button>
                     </form>
 
 
