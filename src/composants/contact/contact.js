@@ -17,7 +17,7 @@ function contact() {
                 </div>
 
                 <div className="sendMessage">
-                    <form className="formulaire">
+                    <form className="formulaire" action="localhost:3000">
 
                         <div className="input-form">
                             <input type="text" name="name" placeholder="Votre nom" />
