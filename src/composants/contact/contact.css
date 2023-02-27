@@ -1,0 +1,310 @@
+.contact-all {
+    background-image: url(../../assets/contact-background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+
+}
+
+.contact {
+    justify-content: center;
+    text-align: center;
+    border: 10px solid #4596D1;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--color-blue);
+    height: 700px;
+    margin-top: 50px;
+    align-items: center;
+
+
+
+
+}
+
+.sendMessage {
+    display: block;
+}
+
+.input-form {
+    margin: 20px;
+
+}
+
+.input-form input {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #4596D1;
+    background-color: transparent;
+    color: #4596D1;
+    width: 70%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 2rem;
+
+}
+
+.btnContact {
+
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    width: 15%;
+
+    margin: auto;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btnContact:hover {
+    background-color: var(--color-lighter-blue);
+    color: var(--color-darker-blue);
+    border: transparent;
+}
+
+.arrow {
+    margin-left: 9px;
+}
+
+.contact-header {
+    margin-top: 3rem;
+}
+
+.contact-presentation {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 5rem;
+    color: white;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+@media screen and (min-width: 360px) and (max-width: 412px) {
+
+    .contact-all {
+
+        grid-template-columns: 1fr;
+        height: 700px;
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        border: 10px solid #4596D1;
+        width: 80%;
+        margin-left: 20px;
+        background-color: var(--color-blue);
+        height: 600px;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .contact-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btnContact {
+
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 45%;
+        cursor: pointer;
+        margin-top: 10px;
+
+
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 480px) {
+    .contact-all {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 1000px;
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        border: 10px solid #4596D1;
+        width: 82%;
+        margin-left: 27px;
+        background-color: var(--color-blue);
+        height: 600px;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .btnContact {
+
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 35%;
+
+
+        cursor: pointer;
+        margin-top: 10px;
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contact-all {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        padding-bottom: 2rem;
+
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        border: 10px solid #4596D1;
+        width: 70%;
+        background-color: var(--color-blue);
+        height: fit-content;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .btnContact {
+
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 30%;
+
+
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 1.5rem;
+
+
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact-all {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        padding-bottom: 2rem;
+
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        border: 10px solid #4596D1;
+        width: 70%;
+        background-color: var(--color-blue);
+        height: fit-content;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .btnContact {
+
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 20%;
+
+
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+
+
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .contact-all {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: fit-content;
+        padding-bottom: 2rem;
+        padding-left: 3%;
+
+    }
+
+    .contact {
+        justify-content: center;
+        text-align: center;
+        border: 10px solid #4596D1;
+        width: 90%;
+        background-color: var(--color-blue);
+        height: fit-content;
+        margin-top: 50px;
+
+        align-items: center;
+    }
+
+    .btnContact {
+
+        background: transparent;
+        border: 2px solid white;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 25%;
+
+
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 2rem;
+
+
+    }
+}

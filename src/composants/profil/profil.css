@@ -1,0 +1,142 @@
+.profil-details {
+    text-align: center;
+
+
+}
+
+.profil-card {
+    padding-top: 3rem;
+}
+
+.profil-card h1 {
+    color: white;
+}
+
+.activity {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.description {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cv-button {
+    color: var(--color-darker-blue);
+    text-decoration: none;
+    border: 1px solid var(--color-lighter-blue);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--color-lighter-blue)
+}
+
+.cv-button:hover {
+    color: var(--color-white);
+    background-color: var(--color-darker-blue);
+}
+
+.profil-picture {
+    width: 220px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin-bottom: 1.5rem;
+}
+
+.scroll-down {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+
+.scroll-down span {
+    transform: rotate(90deg);
+    color: white;
+    animation: bounce;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    writing-mode: vertical-rl;
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 412px) {
+    .description {
+        color: rgb(204, 203, 203);
+        font-weight: bold;
+        width: 300px;
+        font-size: 1rem;
+        padding: 20px;
+        margin-left: 3%;
+        margin-top: 2rem;
+    }
+
+    .scroll-down {
+        display: none;
+
+    }
+}
+
+
+@media screen and (min-width: 413px) and (max-width: 480px) {
+    .description {
+        color: white;
+        font-weight: bold;
+        width: 400px;
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-top: 2rem;
+    }
+
+    .scroll-down {
+        display: none;
+
+    }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .description {
+
+        font-weight: lighter;
+        font-size: 1.02rem;
+
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .scroll-down {
+        position: none;
+        margin-top: 2rem;
+
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {}
