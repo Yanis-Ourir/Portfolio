@@ -2,12 +2,30 @@ import React from 'react'
 import './contact.css'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import Map from '../google-map/map';
+import { useState } from "react";
 
-function contact() {
-    function sendMail() {
-        alert("Votre mail a bien été envoyé !");
+function Contact() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    function validateForm() {
+        return name.length > 0 && email.length > 0 && message.length > 0;
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        if (!validateForm()) {
+            alert("Veuillez remplir tous les champs du formulaire.");
+            return;
+        } else {
+            alert("Votre message à bien été envoyé !");
+            setName("");
+            setEmail("");
+            setMessage("");
+        }
+        // Envoyer le formulaire...
+    }
     return (
         <div className="contact-all">
             <div className="contact">
@@ -17,28 +35,41 @@ function contact() {
                 </div>
 
                 <div className="sendMessage">
-                    <form className="formulaire" action="localhost:3000">
-
+                    <form className="formulaire" onSubmit={handleSubmit}>
                         <div className="input-form">
-                            <input type="text" name="name" placeholder="Votre nom" />
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Votre nom"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                            />
                         </div>
 
-
-
                         <div className="input-form">
-                            <input type="text" name="mail" placeholder="Votre mail" />
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Votre mail"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </div>
 
-
-
                         <div className="input-form">
-                            <input type="text" name="message" placeholder="Votre message" />
+                            <input
+                                type="text"
+                                name="message"
+                                placeholder="Votre message"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}
+                            />
                         </div>
 
-                        <button className="btnContact" type="submit" onClick={() => sendMail()}>Envoyer<AiOutlineArrowRight className="arrow" /></button>
+                        <button className="btnContact" type="submit">
+                            Envoyer <AiOutlineArrowRight className="arrow" />
+                        </button>
                     </form>
-
-
                 </div>
 
 
@@ -48,4 +79,4 @@ function contact() {
     )
 }
 
-export default contact
+export default Contact

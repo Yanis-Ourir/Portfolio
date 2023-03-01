@@ -1,7 +1,7 @@
 .map {
     justify-content: center;
     display: flex;
-    margin-right: 10%;
+    margin-right: 7%;
     margin-top: 50px;
 }
 
@@ -24,7 +24,7 @@
     .map-resp {
         width: 80%;
         height: 100%;
-        margin-left: 10%;
+        margin-left: 7%;
     }
 }
 

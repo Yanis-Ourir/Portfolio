@@ -37,7 +37,7 @@ function App() {
             </button>
           </ul>
         </nav>
-        <div className="hidden-nav">
+        <div className="hidden-nav" id="navbar">
           <img src="image-portfolio/logoYanis.png" alt="logo" className="logo-responsive" />
           <button className="nav-btn" onClick={showNavbar}>
             <FaBars />
