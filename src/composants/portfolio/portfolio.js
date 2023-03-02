@@ -84,9 +84,9 @@ function Portfolio() {
                         <div className="portfolio-image">
                             <Carousel autoPlay infiniteLoop showIndicators={false} showStatus={false} showThumbs={false}>
 
-                                <img src={list.first_screen} key={list.id} className="portfolio-img"></img>
-                                <img src={list.second_screen} key={list.id} className="portfolio-img"></img>
-                                <img src={list.third_screen} key={list.id} className="portfolio-img"></img>
+                                <img src={list.first_screen} key={list.id} className="portfolio-img" alt={list.title}></img>
+                                <img src={list.second_screen} key={list.id} className="portfolio-img" alt={list.title}></img>
+                                <img src={list.third_screen} key={list.id} className="portfolio-img" alt={list.title}></img>
 
                             </Carousel>
 
